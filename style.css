@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Dela+Gothic+One&family=Jomhuria&display=swap&family=Akaya+Kanadaka&display=swap&family=Anton&display=swap'&family=Caveat:wght@600&display=swap'&family=Righteous&display=swap'family=Ubuntu&display=swap'&family=Jomhuria&display=swap&family=Josefin+Sans:ital,wght@1,600&display=swap&family=Source+Code+Pro:wght@200&display=swap&family=Source+Code+Pro&display=swap');'");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-img {
+  width: 38%;
+  border: 1px solid white;
+  border-radius: 50%;
+  animation: border-change 5s infinite;
+  cursor: pointer;
+}
+#big-logo {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  border-radius: 50%;
+  height: 27%;
+  width: 17%;
+  position: absolute;
+  opacity: 0;
+  animation: border-change 5s infinite;
+  cursor: pointer;
+}
+#big-logo:hover {
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+@keyframes border-change {
+  10% {
+    border: 2px solid red;
+  }
+  20% {
+    border: 2px solid blue;
+  }
+  30% {
+    border: 2px solid pink;
+  }
+  40% {
+    border: 2px solid yellow;
+  }
+  50% {
+    border: 2px solid green;
+  }
+  60% {
+    border: 2px solid peachpuff;
+  }
+  80% {
+    border: 2px solid black;
+  }
+  90% {
+    border: 2px solid royalblue;
+  }
+  100% {
+    border: 2px solid skyblue;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 2% 4%;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 225%;
+  font-family: "Jomhuria", cursive;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.rightNav {
+  width: 30%;
+  text-align: right;
+  padding: 0% 1.5%;
+  display: inline-block;
+}
+
+#search {
+  width: 40%;
+  padding: 1.7%;
+  font-size: 70%;
+  border: 2px solid grey;
+  border-radius: 9px;
+  display: inline-block;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url(party.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.btn {
+  padding: 5px 10px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Akaya Kanadaka", cursive;
+}
+.btn-sm {
+  font-size: 70%;
+  padding: 6px 10px;
+}
+
+.login {
+  font-size: 130%;
+  margin-left: 8%;
+  font-family: "Akaya Kanadaka", cursive;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slide-container {
+  position: relative;
+  width: 80%;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 75.5vh;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 13% 5%;
+  border-radius: 10px;
+}
+.burger {
+  margin-top: 4%;
+  margin-right: 2%;
+  right: 3%;
+}
+
+.drop {
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  height: 76%;
+  width: 20%;
+}
+.menu {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 0%;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes bg-changer {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.drop-btn {
+  margin-top: 3.5%;
+  width: 75%;
+  margin-left: 9%;
+  margin-right: 9%;
+  font-size: 125%;
+  border-radius: 10px;
+  font-family: "Akaya Kanadaka", cursive;
+  border: 2px solid black;
+}
+
+.drop-btn:hover {
+  background-image: linear-gradient(
+    60deg,
+    red,
+    blue,
+    yellow,
+    green,
+    rgb(30, 43, 117),
+    peachpuff,
+    green,
+    orange,
+    red
+  );
+  background-size: 1000%;
+  animation: bg-changer 10s infinite;
+  color: white;
+  border: 2px solid white;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+#offers button {
+  position: absolute;
+  top: 2.2%;
+  left: 4%;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 130%;
+  color: black;
+  padding: 3%;
+  border: 1.5px solid black;
+  background-image: linear-gradient(
+    60deg,
+    royalblue,
+    peachpuff,
+    pink,
+    #ccff99,
+    #66cccc,
+    peachpuff,
+    #ccff99,
+    #66cccc,
+    rosybrown,
+    peachpuff,
+    royalblue,
+    royalblue
+  );
+  background-size: 1000%;
+  animation: bg-changer 5s infinite;
+}
+
+.invisible {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.small-slide-container {
+  position: absolute;
+  top: 13%;
+  left: 15%;
+}
+
+.small-slide {
+  display: none;
+}
+
+.arrow-small {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  color: black;
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 50%;
+  font-size: 150%;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.arrow-small:hover {
+  background: transparent;
+}
+
+.next-small {
+  right: 1%;
+}
+
+.prev-small {
+  left: 5%;
+}
+
+.h-primary {
+  text-align: center;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 255%;
+}
+
+@keyframes changebg {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+#client-section {
+  background-image: linear-gradient(
+    60deg,
+    peachpuff,
+    pink,
+    #ccff99,
+    #66cccc,
+    peachpuff,
+    #ccff99,
+    #66cccc,
+    rosybrown,
+    yellow
+  );
+  background-size: 1000%;
+  height: 46vh;
+  animation: bg-changer 5s infinite;
+}
+
+#clients {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 20vh;
+}
+.client-item {
+  padding: 2.5%;
+}
+
+.small-slides-container {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+.small-slides {
+  display: none;
+}
+
+.small-slides img {
+  width: 97%;
+  height: 27vh;
+}
+
+.arrows-small {
+  cursor: pointer;
+  position: absolute;
+  top: 76%;
+  color: black;
+  background-color: rosybrown;
+  padding: 3px 10px;
+  border-radius: 50%;
+  font-size: 140%;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.arrows-small:hover {
+  background: transparent;
+}
+
+.nexts-small {
+  right: 1%;
+}
+
+.prevs-small {
+  left: 1%;
+}
+
+.city-head {
+  text-align: center;
+  font-family: "Akaya Kanadaka", cursive;
+  color: white;
+  height: 5vh;
+}
+
+.all-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.cities .all-city .city a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+  font-size: 125%;
+  margin: 15px 80px;
+  font-family: "Righteous", cursive;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 10%;
+  background-color: white;
+}
+
+.cities .all-city .city a:hover {
+  background-image: linear-gradient(
+    60deg,
+    royalblue,
+    peachpuff,
+    pink,
+    #ccff99,
+    #66cccc,
+    peachpuff,
+    #ccff99,
+    #66cccc,
+    rosybrown,
+    peachpuff,
+    royalblue,
+    royalblue
+  );
+  background-size: 1000%;
+  animation: bg-changer 5s infinite;
+}
+
+#main-box {
+  position: absolute;
+  background-color: white;
+  opacity: 0.65;
+  width: 77%;
+  height: 34%;
+  top: 34%;
+  left: 12%;
+  box-shadow: -14px -14px 5px 10px rgba(0, 0, 0, 2);
+}
+
+.event {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  left: 3%;
+  font-size: 115%;
+  border: 3px solid black;
+  opacity: 2;
+  width: 18.5%;
+  font-family: "Righteous", cursive;
+  transition: all 2s ease;
+  background-image: linear-gradient(45deg, peachpuff, yellow, palegreen, cyan);
+}
+
+.date {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  left: 24%;
+  width: 22%;
+  font-size: 115%;
+  border: 3px solid black;
+  transition: all 2s ease;
+  opacity: 2;
+  font-family: "Righteous", cursive;
+  background-image: linear-gradient(45deg, peachpuff, yellow, palegreen, cyan);
+}
+
+#main-head {
+  font-weight: bolder;
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+.person {
+  position: absolute;
+  top: 40%;
+  left: 49%;
+  cursor: pointer;
+  font-size: 110%;
+  border: 3px solid black;
+  opacity: 2;
+  width: 19.2%;
+  font-family: "Righteous", cursive;
+  transition: all 2s ease;
+  background-image: linear-gradient(45deg, peachpuff, yellow, palegreen, cyan);
+}
+
+.state {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  left: 71%;
+  font-size: 110%;
+  border: 3px solid black;
+  opacity: 2;
+  width: 25.5%;
+  font-family: "Righteous", cursive;
+  transition: all 2s ease;
+  background-image: linear-gradient(45deg, peachpuff, yellow, palegreen, cyan);
+}
+
+#submit-main {
+  position: absolute;
+  cursor: pointer;
+  bottom: 9%;
+  left: 44%;
+  color: white;
+  background-color: black;
+  font-family: "Righteous", cursive;
+  font-size: 110%;
+  padding: 5px;
+  border-radius: 25%;
+}
+
+.shopping {
+  background-image: linear-gradient(45deg, #33ccff, #ff99cc);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+#shop-head {
+  background-color: rgba(12, 0, 0, 0.507);
+  color: white;
+  position: absolute;
+  left: 42%;
+  top: 97%;
+  border: 5px solid rgba(22, 2, 2, 0.726);
+  padding: 10px;
+  border-radius: 19%;
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+.shop-images {
+  display: flex;
+  margin: 10% 0%;
+  margin-left: -1%;
+}
+
+.shop-img {
+  margin-left: 2.1%;
+}
+.shop-img img {
+  width: 300px;
+  height: 37vh;
+  border: 5px solid black;
+  animation: border 3s infinite;
+  border-radius: 5%;
+  box-shadow: 9px 9px 10px 9px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.gift-para {
+  position: absolute;
+  top: 146%;
+  color: #f3e5ab;
+  font-size: 150%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 22.5%;
+  height: 5.5vh;
+  display: inline-block;
+  cursor: pointer;
+}
+.choco-cap {
+  text-align: center;
+  left: 1.3%;
+  font-family: "Ubuntu", sans-serif;
+}
+.wed-cap {
+  text-align: center;
+  left: 26.2%;
+  font-family: "Ubuntu", sans-serif;
+}
+.cake-cap {
+  text-align: center;
+  left: 51%;
+  font-family: "Ubuntu", sans-serif;
+}
+.flower-cap {
+  text-align: center;
+  left: 76%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.shop-img h2 {
+  text-align: center;
+  color: black;
+  font-size: 160%;
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+.text-footer {
+  text-align: center;
+  padding: 2% 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#contact-us {
+  background-image: radial-gradient(yellow, yellow, yellow, white);
+}
+#contact-us img {
+  width: 70%;
+  height: 76vh;
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 20px 3px black;
+  border-radius: 3%;
+}
+#contact-infos {
+  position: absolute;
+  top: 269%;
+  left: 54%;
+  background: rgb(235, 235, 10);
+  /* background-color: black; */
+  width: 30%;
+  height: 55vh;
+}
+#event-data {
+  font-size: 105%;
+  margin-top: 8%;
+  margin-left: 1%;
+  padding: 5px 3px;
+  width: 88%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+}
+/* #type-of-event {
+  margin-left: 3%;
+  padding: 5px 3px;
+  margin-top: 2%;
+  width: 43%;
+  box-shadow: 1px 1px 5px 1px black;
+  color: #787878;
+  border: none;
+  font-family: "Righteous", cursive;
+  font-size: 102%;
+} */
+#first-name {
+  font-size: 105%;
+  margin-top: 6%;
+  margin-left: 1%;
+  padding: 5px 3px;
+  width: 41%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+}
+#last-name {
+  font-size: 105%;
+  margin-top: 6%;
+  margin-left: 3.3%;
+  padding: 5px 3px;
+  width: 42%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+}
+#e-mail {
+  font-size: 105%;
+  margin-top: 6%;
+  margin-left: 1.1%;
+  padding: 5px 3px;
+  width: 41%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+}
+#phone {
+  font-size: 105%;
+  margin-top: 6%;
+  margin-left: 3.1%;
+  padding: 5px 3px;
+  width: 42%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+}
+
+#message {
+  font-size: 102%;
+  margin-top: 6%;
+  margin-left: 1%;
+  padding: 5px 3px;
+  width: 89%;
+  height: 30%;
+  box-shadow: 1px 1px 5px 1px black;
+  border: none;
+  font-family: "Righteous", cursive;
+  resize: none;
+}
+#submit {
+  margin-top: 6%;
+  margin-left: 22%;
+  width: 44%;
+  height: 10%;
+  background: black;
+  color: white;
+  font-size: 150%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+.anim {
+  padding: 0;
+  margin: 0;
+  top: 19%;
+  left: 2%;
+  opacity: 0.4;
+  font-family: 'Source Code Pro', monospace;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: white;
+  position: absolute;
+  width: 60%;
+  height: 20%;
+  box-shadow: -10px -10px 1px 5px black;
+  border: 2px solid black; 
+}
+
+#animh1 {
+  font-size: 6vh;
+  position: relative;font-family: 'Source Code Pro', monospace;
+  position: relative;
+}
+
+#animh1::before,
+#animh1::after {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0%;
+  position: absolute;
+}
+
+#animh1::before {
+  background: white;
+  animation: typewriter 5s steps(26) 1s forwards;
+
+}
+
+#animh1::after {
+  width: .09em;
+  background: black;
+  animation: typewriter 5s steps(26) 1s forwards,
+      blink 500ms steps(29) infinite;
+}
+
+@keyframes typewriter {
+  to {
+      left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+      background: transparent;
+  }
+}

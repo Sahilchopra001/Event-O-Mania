@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SUMMER TRAINING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="Event-O-Mania.jpeg" alt="logo" onclick="location.reload()" id="logo-img">
+            </div>
+            <li><a href="">Home</a></li>
+            <li><a href=" #cities">Branches</a></li>
+            <li><a href="about us.html">About us</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+        </ul>
+        <div class=" rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+            <a href="login or sign p.html">
+                <button class="login">Login/Signup</button></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="slide7.jpg" alt="" id="slide-image">
+        </div>
+        <div id="main-box">
+            <h2 id="main-head">CHOOSE YOUR EVENT DETAILS</h2>
+            <select name="dropdown" class="event">
+                <option value="" disabled selected hidden>Choose Event</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Kitty-party">Kitty party</option>
+                <option value="Formal Meetings">Formal Meetings</option>
+            </select>
+            <input type="date" class="date">
+
+            <select name="dropdown" class="person">
+                <option value="" disabled selected hidden>No.of Attendees</option>
+                <option value="">1-5</option>
+                <option value="">6-15</option>
+                <option value="">15-40</option>
+                <option value="">41-100</option>
+                <option value="">More Than 100</option>
+            </select>
+
+            <select name="dropdown" class="state">
+                <option value="" disabled selected hidden>Select Preffered State</option>
+                <option value="">Punjab</option>
+                <option value="">Bihar</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Delhi</option>
+                <option value="">Haryana</option>
+                <option value="">Gujrat</option>
+                <option value="">J & K</option>
+                <option value="">Uttrakhand</option>
+            </select>
+            <a href="login or sign p.html">
+                <input type="submit" id="submit-main"></a>
+        </div>
+    </div>
+
+    <img src="Event-O-Mania.jpeg" alt="" id="big-logo" onclick="location.reload()">
+
+    <div class="background drop">
+        <div class="menu">
+            <a href="login or sign p.html">
+                <button class="drop-btn">My Account</button></a>
+            <button class="drop-btn" onclick="noorders()">My Orders</button>
+            <a href="#client-section">
+                <button class="drop-btn">Our Clients</button></a>
+            <a href="#contact-us">
+                <button class="drop-btn">Contact Us</button></a>
+            <a href="about us.html">
+                <button class="drop-btn">About Us</button></a>
+            <a href="sign-up.html">
+                <button class="drop-btn">Sign-up</button></a>
+            <a href="loginpage.html">
+                <button class="drop-btn">Login</button></a>
+        </div>
+        <div id="offers">
+            <button>GIFT AND OFFERS SECTION</button>
+            <div class="small-slide-container">
+                <div class="small-slide"><img src="gift 3.jpg" alt=""></div>
+                <div class="small-slide"><img src="gift 2.jpg" alt=""></div>
+                <div class="small-slide"><img src="gift 1.jpg" alt=""></div>
+                <div class="small-slide"><img src="gift 4.jpg" alt=""></div>
+            </div>
+            <span class="arrow-small prev-small" onclick="controller1(-1)">&#11160;</span>
+            <span class="arrow-small next-small" onclick="controller1(+1)">&#11162;</span>
+
+            <div class="small-slides-container">
+                <div class="small-slides"><img src="offer 3.jpg" alt=""></div>
+                <div class="small-slides"><img src="offer 2.jpg" alt=""></div>
+                <div class="small-slides"><img src="offer 1.jpg" alt=""></div>
+                <div class="small-slides"><img src="offer 4.png" alt=""></div>
+            </div>
+            <span class="arrows-small prevs-small" onclick="control(-1)">&#11160;</span>
+            <span class="arrows-small nexts-small" onclick="control(+1)">&#11162;</span>
+        </div>
+    </div>
+
+    <div class="shopping">
+        <h2 id="shop-head">FOR YOUR LOVED ONES</h2>
+        <div class="shop-images">
+            <div class="shop-img">
+                <h2>Sweet as Love</h2>
+                <img src="chocolate.jpg" alt="">
+                <p class="choco-cap gift-para">Starts at 20$ Only</p>
+
+            </div>
+            <div class="shop-img">
+                <h2>Wedding customizables</h2>
+                <img src="wedding gift.jpg" alt="">
+                <p class="gift-para wed-cap">Starts at 45$ Only</p>
+            </div>
+            <div class="shop-img">
+                <h2>Costums and Pics cakes</h2>
+                <img src="cakepic.jpg" alt="">
+                <p class="cake-cap gift-para">Starts at 35$ Only</p>
+            </div>
+            <div class="shop-img">
+                <h2>Bouquitue section</h2>
+                <img src="flower.jpg" alt="">
+                <p class="gift-para flower-cap">Starts at 10$ Only</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cities background" id="cities">
+        <h1 class="city-head">CONNECTING US TOGETHER</h1>
+        <div class="all-city">
+            <div class="city">
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1yZUnTXBS_bAjmdv-owCzkvWKoPM&ie=UTF8&hl=en&msa=0&ll=31.090574000000004%2C73.476563&spn=23.22921%2C46.538086&t=h&z=5">PUNJAB</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1xc27-Ev9EZXMUdWBImQ8VIIA-sI&ie=UTF8&oe=UTF8&msa=0&ll=30.60445777719909%2C75.96294350000001&z=7">HARYANA</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=12dHxVDKIZJSi0dpUdAsHLxC4fjU&ie=UTF8&oe=UTF8&msa=0&ll=26.966091809828523%2C80.3361565&z=7">
+                    UTTARPRADESH</a>
+            </div>
+            <div class="city">
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=11dZbd3rjS4hsIWzVLYNBnWrHRBw&msa=0&hl=en&ie=UTF8&t=m&source=embed&showlabs=1&z=7&vpsrc=0&err=1&ll=25.208902033916715%2C85.54925">BIHAR</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1aIvN5JsVOqF38zLVZ3AOgPNipa4&ie=UTF8&t=m&oe=UTF8&msa=0&ll=32.99153100000004%2C74.93130699999998&z=17">JAMMU
+                    AND KASHMIR</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1wf1X_SQhHL_Ue9rR3Ia5yPLz_Xk&ie=UTF8&t=m&oe=UTF8&msa=0&ll=30.05007240938608%2C79.14001000000002&z=8">
+                    UTTRAKHAND</a>
+            </div>
+            <div class="city">
+                <a
+                    href="https://www.google.com/maps/d/embed?mid=1aXd5NHzDq44f_WpooKYHOdLB6EA&hl=en&ie=UTF8&msa=0&t=p&om=0&s=AARTsJp_XA5Z3WOEKDEyXhT2wxRJh_KkjQ&ll=25.95804500000002%2C79.36523400000003&spn=18.899734%2C81.5625&z=4&output=embed">GUJRAT</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1Y0J-7WiqNbHkG49b7jIS5TYhSq0&msa=0&ll=27.163908406391936%2C78.01498899999999&spn=0.019053%2C0.042272&iwloc=0004e15ae754ded4f84f3&z=14">AGRA</a>
+                <br>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=1IEVwjHNKZcYI5LKHZfRSFXEKyzg&ie=UTF8&oe=UTF8&msa=0&ll=28.536795394594403%2C77.15845149999998&z=11">DELHI</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="apple_logo-removebg-preview.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="oyo_logo-removebg-preview.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="twitter_logo-removebg-preview.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="microsoft_logo-removebg-preview.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="paytm_logo-removebg-preview.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+
+    <div id="contact-us">
+        <img src="contact us pic.jpeg" alt="" style="border:1px solid yellow" ;>
+        <div id="contact-infos">
+
+            <form action="connect.php" method="POST">
+
+                <input type="text" placeholder="Event Data" id="event-data" name="event_data">
+
+                
+
+
+                <!-- <select id="type-of-event" name="typeofevent"> 
+                    <option value="" disabled selected hidden>Type of Event</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="formal">Formal Meeting</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="kitty">Kitty Party</option>
+                    <option value="casual">Casual Get together</option>
+                </select> -->
+
+                <input type="text" id="first-name" placeholder="First Name" name="first_name">
+
+                <input type="text" id="last-name" placeholder="Last Name" name="last_name">
+
+                <input type="email" id="e-mail" placeholder="Email" name="email">
+
+                <input type="number" id="phone" placeholder="Phone" name="phone">
+
+                <Textarea id="message" placeholder="Message For Us" name="msg"></Textarea>
+
+                <input type="SUBMIT" id="submit" name="save" value="submit">
+            </form>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p class="background text-footer"> Copyright &copy: www.SAHIL_HERE.com --All rights reserved
+        </p>
+    </footer>
+
+
+    <div class="anim">
+        <h1 id="animh1">Welcome to Event-O-Mania !</h1>
+    </div>
+</body>
+<script src="script.js"></script>
+
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap&family=Cabin&display=swap&family=Uchen&display=swap');
+
+    body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        position: absolute;
+        top: -10%;
+        width: 100%;
+        height: 120%;
+        overflow: hidden;
+    }
+
+    .main-login {
+        background: white;
+        position: absolute;
+        top: 24%;
+        left: 55.3%;
+        width: 370px;
+        height: 280px;
+        border-radius: 4%;
+        box-shadow: 5px 5px 18px 8px black;
+    }
+
+    #user-name {
+        padding: 5px 5px;
+        font-size: 22px;
+        font-family: 'Akaya Kanadaka', cursive;
+        border-radius: 7%;
+    }
+
+    #password {
+        padding: 5px 5px;
+        font-size: 22px;
+        font-family: 'Akaya Kanadaka', cursive;
+        margin-top: 20px;
+        border-radius: 7%;
+    }
+
+    #infos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 85px 40px;
+    }
+
+    #btn-in {
+        margin-top: 27px;
+        background: #4166f5;
+        font-family: 'Akaya Kanadaka', cursive;
+        font-size: 22px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 2px solid black;
+        border-radius: 10%;
+        cursor: pointer;
+        width: 250px;
+    }
+
+    #btn-in:hover {
+        background: skyblue;
+        transition: all 1s ease;
+    }
+
+    #create {
+        position: absolute;
+        top: 110%;
+        left: 18.8%;
+        height: 45px;
+        width: 240px;
+    }
+
+    #create:hover {
+        cursor: pointer;
+        background: transparent;
+    }
+
+    .already {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        width: 370px;
+        height: 62px;
+        background: black;
+        text-align: center;
+        border-radius: 4%;
+        box-shadow: 2px 4px 10px 0px black;
+    }
+
+    .already p {
+        color: white;
+        position: absolute;
+        left: 12%;
+        font-family: 'Otomanopee One', sans-serif;
+        font-size: 21px;
+        bottom: -7%;
+    }
+</style>
+
+<body>
+    <div class="login">
+        <img src="login page pic.jpg" alt="">
+    </div>
+
+    <div class="main-login">
+        <div class="already">
+            <p>Already Members</p>
+        </div>
+        <div id="infos">
+            <form action="login.php" method="POST">
+            <input type="text" id="user-name" placeholder="Enter your Username">
+            <input type="password" id="password" placeholder="Enter your password">
+            <input type="submit" id="btn-in" name="submit" value="SUBMIT"></form>
+        </div>
+        <a href="sign-up.html">
+            <div id="create">
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

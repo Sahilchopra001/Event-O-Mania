@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #full {
+        height: 100%;
+        height: 100vh;
+        background-image: linear-gradient(#0437F2, white, #0437F2);
+    }
+
+    #bg-img {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80vh;
+        box-shadow: 10px 10px 25px 5px black;
+    }
+
+    #signup-infos {
+        background-color: white;
+        position: absolute;
+        width: 320px;
+        height: 150px;
+        top: 44%;
+        left: 38.5%;
+    }
+
+    .name {
+        margin-top: 5px;
+        padding: 5px 5px;
+        font-size: 17px;
+        font-family: 'Akaya Kanadaka', cursive;
+        border-radius: 7%;
+        margin-left: 8%;
+        border: 1px solid rgb(194, 173, 173);
+    }
+
+    .email {
+        margin-top: 15px;
+        padding: 5px 5px;
+        font-size: 17px;
+        font-family: 'Akaya Kanadaka', cursive;
+        border-radius: 7%;
+        margin-left: 8%;
+        border: 1px solid rgb(194, 173, 173);
+    }
+
+    .pass {
+        margin-top: 15px;
+        padding: 5px 5px;
+        font-size: 17px;
+        font-family: 'Akaya Kanadaka', cursive;
+        border-radius: 7%;
+        margin-left: 8%;
+        border: 1px solid rgb(194, 173, 173);
+    }
+
+    #submit {
+        color: magenta;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        margin-left: 10%;
+        cursor: pointer;
+        width: 62%;
+        height: 20%;
+        border: transparent;
+        background: transparent;
+    }
+    
+    #submit:hover{
+        transition: all 1s ease;
+        background: black;
+    }
+
+    #create-acc {
+        background-color: white;
+        position: absolute;
+        top: 68%;
+        width: 22%;
+        left: 40%;
+    }
+
+    .login {
+        position: absolute;
+        width: 235px;
+        height: 27px;
+        background: transparent;
+        top: 76.5%;
+        left: 41%;
+    }
+
+    #not {
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        top: 26%;
+        left: 37.5%;
+        width: 340px;
+        height: 70px;
+    }
+</style>
+
+<body>
+    <div id="full">
+        <img src="sign up beach.jpg" alt="" id="bg-img">
+        <div id="signup-infos">
+            <form action="sign_up.php" method="POST">
+            <input type="text" placeholder="Enter Your Full name" class="name" name="full_name">
+            <input type="email" placeholder="Enter Your Email Id" class="email" name="email_id">
+            <input type="password" placeholder="Enter Password" class="pass" name="password">
+        </div>
+        <div id="create-acc">
+            <input type="submit" name="submit" value="CREATE ACCOUNT" id="submit"></form>
+        </div> <a href="loginpage.html">
+            <div class="login"></div>
+    </div></a>
+    <div id="not" onclick="not()">
+
+    </div>
+    <script>
+        function not() {
+            alert("Not working! Will work on it soon.")
+        }
+    </script>
+</body>
+
+</html>

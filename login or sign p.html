@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-image: radial-gradient(white, white, pink);
+    }
+
+    #bg {
+      width: 100%;
+      height: 100vh;
+    }
+
+    img {
+      width: 75%;
+      height: 80vh;
+      margin-top: 10vh;
+      margin-left: 13%;
+      box-shadow: 2px 2px 20px 5px black;
+    }
+
+    .not-working {
+      position: absolute;
+      width: 244px;
+      height: 139px;
+      background: transparent;
+      top: 37%;
+      left: 41.5%;
+      cursor: pointer;
+    }
+
+    #sign-in {
+      position: absolute;
+      width: 244px;
+      border-radius: 6%;
+      height: 40px;
+      background: transparent;
+      top: 60%;
+      left: 41.5%;
+    }
+
+    #createacc {
+      position: absolute;
+      width: 194px;
+      border-radius: 6%;
+      height: 15px;
+      background: transparent;
+      top: 68%;
+      left: 43.5%;
+    }
+    #ese-hi{
+      position: absolute;
+      width: 40px;
+      height: 50px;
+      background: white;
+      top: 11%;
+      left: 85%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bg">
+    <img src="sign up or login.png" alt="" />
+    <div class="not-working" onclick="nono()"></div><a href="loginpage.html">
+      <div id="sign-in">
+
+      </div>
+    </a>
+    <a href="sign-up.html">
+      <div id="createacc">
+      </div>
+    </a>
+  </div>
+  <div id="ese-hi"></div>
+
+  <script>
+    function nono() {
+      alert("Not Working! Will Work on it soon.Please Use Sign in with email option or Create one");
+    }
+  </script>
+</body>
+
+</html>
